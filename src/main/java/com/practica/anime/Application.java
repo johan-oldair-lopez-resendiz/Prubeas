@@ -17,4 +17,5 @@ public class Application {
 	public SpringDataDialect springDataDialect() {
 		return new SpringDataDialect();
 	}
+	//
 }
