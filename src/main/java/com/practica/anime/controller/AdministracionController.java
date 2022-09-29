@@ -87,6 +87,8 @@ public class AdministracionController {
 		return new ModelAndView("redirect:/administracion");
 	}
 	
+	//pendiente mas cosas
+	
 	
 	@GetMapping("/editar")
 	public ModelAndView editarAnime(@RequestParam("id") Integer id) {
