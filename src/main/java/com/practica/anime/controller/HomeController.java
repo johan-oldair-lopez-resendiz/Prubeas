@@ -36,13 +36,6 @@ public class HomeController {
 				.addObject("ultimosAnimes", ultimosAnimes);
 	}
 	
-	/*@GetMapping("/animes")
-	public ModelAndView listarAnimes(@PageableDefault(sort = "fechaEstreno",direction = Sort.Direction.DESC) Pageable pageable, @Param("PalabraClave") String PalabraClave) {
-		Page<Anime> animes = animeRepositoryDao.findAll(pageable);
-		
-		return new ModelAndView("anime/animes")
-				        .addObject("animes",animes);
-	}*/
 	
 	@GetMapping("/animes")
 	public ModelAndView listarAnimes(@Param("PalabraClave") String PalabraClave, @PageableDefault(sort = "fechaEstreno",direction = Sort.Direction.DESC) Pageable pageable) {
